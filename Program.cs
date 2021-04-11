@@ -34,7 +34,7 @@ namespace XO_Game
             } while (Status().Equals("None") && count < table.Length());
         }
 
-        private static void Display()
+        public static void Display()
         {
             //Console.Clear();
             Console.WriteLine("     |     |      ");
@@ -48,7 +48,7 @@ namespace XO_Game
             Console.WriteLine("     |     |      ");
         }
 
-        private static void Put(int n)
+        public static void Put(int n)
         {
             if (table[n] != 'X' && table[n] != 'O') // Checking if this place is not taken
             {
@@ -75,7 +75,7 @@ namespace XO_Game
             }
         }
 
-        private static string Status()
+        public static string Status()
         {
             String stat = "None";
             int flag = 0;
